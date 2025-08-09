@@ -93,8 +93,8 @@
             }
 
             #loggerOutput {
-                width: 800px;
-                height: 100px;
+                width: 480px;
+                height: 200px;
 
                 border: 0px none;
                 padding: 0px;
@@ -104,6 +104,24 @@
                 color: white;
                 font-family: 'Lucida Console', Monaco, monospace;
                 outline: none;
+            }
+
+            #ui-container {
+                border: 0px none;
+                padding: 0px;
+                margin: 0px;
+
+                /* display: flex; */
+                /* top: 0px; */
+                width: 300px;
+                position: relative;
+                /* right: 0px;
+                top: 0px; */
+            }
+            #ui-container p, #ui-container p a {
+                padding: 0px;
+                margin: 0px;
+                color: #ff6666;
             }
 
         </style>
@@ -122,6 +140,12 @@
             </div>
 
             <div id="sub-area">
+
+                <div id="ui-container">
+
+                    <p>Source Code: <a href="https://github.com/GuillaumeBouchetEpitech/ik-animations-experiment">Github Link</a></p>
+
+                </div>
 
                 <textarea id="loggerOutput" rows="10" readonly></textarea>
 
