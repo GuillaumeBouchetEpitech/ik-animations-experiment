@@ -1,0 +1,19 @@
+{
+    "include": [
+        "./src/main.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "esnext",
+        "module": "esnext",
+        "lib": ["esnext", "dom"],
+        "strict": true,
+        "moduleResolution": "node",
+        "rootDir": ".",
+        "baseUrl": "./",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+    },
+    "exclude": ["./dist"]
+}

@@ -1,0 +1,16 @@
+
+# Mac specific
+.DS_Store
+./**/*.DS_Store
+
+# install generated
+package-lock.json
+node_modules
+
+# build generated
+# build
+
+junit.xml
+coverage
+test-report.json
+
