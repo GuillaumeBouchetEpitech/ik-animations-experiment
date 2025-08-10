@@ -196,7 +196,7 @@ export function renderWireframeAnimatedHumanoidStrafing(
 
       { // render floor
 
-        const ratio = easing.easeClamp(continuousTime * 1.5);
+        const ratio = easing.easeClamp(continuousTime * 1.0);
 
         for (let xx = 0; xx < 1; ++xx) {
           for (let yy = 0; yy < 4; ++yy) {

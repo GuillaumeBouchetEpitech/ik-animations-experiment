@@ -35,8 +35,8 @@ case ${USER_INPUT} in
   1)
     echo "=> bundle fast"
 
-    npm run bunjs-build-debug
-    # npm run watch
+    # npm run bunjs-build-debug
+    npm run watch
     ;;
   2)
     echo "=> bundle small"

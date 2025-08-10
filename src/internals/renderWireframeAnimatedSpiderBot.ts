@@ -312,7 +312,7 @@ export function renderWireframeAnimatedSpiderBot(
 
     { // render floor
 
-      const ratio = easing.easeClamp(continuousTime * 1.5);
+      const ratio = easing.easeClamp(continuousTime * 1);
 
       for (let xx = 2; xx < 6; ++xx) {
         for (let yy = 2; yy < 5; ++yy) {

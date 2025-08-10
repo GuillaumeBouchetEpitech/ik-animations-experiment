@@ -189,7 +189,7 @@ export function renderWireframeAnimatedHumanoidWalking(
 
       { // render floor
 
-        const ratio = easing.easeClamp(continuousTime * 1.5);
+        const ratio = easing.easeClamp(continuousTime * 1.0);
 
         for (let xx = 0; xx < 2; ++xx) {
           for (let yy = 1; yy < 2; ++yy) {
