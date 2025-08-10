@@ -4,6 +4,8 @@ import * as THREE from "three";
 import Stats from 'stats.js'
 
 import { renderWireframeAnimatedCircles } from "./internals/renderWireframeAnimatedCircles";
+import { renderWireframeAnimatedHumanoidStrafing } from "./internals/renderWireframeAnimatedHumanoidStrafing";
+import { renderWireframeAnimatedHumanoidWalking } from "./internals/renderWireframeAnimatedHumanoidWalking";
 import { renderWireframeAnimatedSpiderBot } from "./internals/renderWireframeAnimatedSpiderBot";
 import { renderWireframeOrigin } from "./internals/renderWireframeOrigin";
 
@@ -85,6 +87,8 @@ window.onload = async () => {
 
     const toSync: ((deltaTimeSec: number) => void)[] = [
       renderWireframeAnimatedCircles(scene),
+      renderWireframeAnimatedHumanoidStrafing(scene),
+      renderWireframeAnimatedHumanoidWalking(scene),
       renderWireframeAnimatedSpiderBot(scene),
       renderWireframeOrigin(scene),
     ];

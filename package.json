@@ -1,9 +1,8 @@
 {
-  "name": "FrankenPhys",
+  "name": "ik-animations-experiment",
   "version": "0.0.1",
   "description": "TODO",
   "main": "dist/bundle.js",
-  "types": "dist/browser/index.ts",
   "type": "module",
   "repository": "TODO",
   "scripts": {

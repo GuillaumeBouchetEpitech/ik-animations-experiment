@@ -50,6 +50,18 @@ export function renderWireframeAnimatedSpiderBot(
 
     continuousTime += deltaTimeSec * 1.0;
 
+    { // scene rotation over time
+
+      const angleZ = easing.easeClamp(continuousTime * (1/32));
+
+      const quat = new THREE.Quaternion();
+      quat.setFromAxisAngle(new THREE.Vector3(0,0,1), Math.PI * 2 * angleZ);
+
+      boxStackRenderer.asSceneObject().rotation.setFromQuaternion(quat);
+      wireframeStackRenderer.asSceneObject().rotation.setFromQuaternion(quat);
+
+    } // scene rotation over time
+
     wireframeStackRenderer.clear();
 
     //
@@ -302,8 +314,8 @@ export function renderWireframeAnimatedSpiderBot(
 
       const ratio = easing.easeClamp(continuousTime * 1.5);
 
-      for (let xx = 0; xx < 9; ++xx) {
-        for (let yy = 0; yy < 7; ++yy) {
+      for (let xx = 2; xx < 6; ++xx) {
+        for (let yy = 2; yy < 5; ++yy) {
           boxStackRenderer.pushBox(
             [
               k_rootPos[0] + 22 - ratio * 5 - xx * 5,
